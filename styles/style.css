@@ -1,15 +1,11 @@
-/* место для вашего кода */
-.main {
-    display: flex;
-    flex-direction: column;
-    gap: 183px;
-  }
-
+/* хедер */
 .header {
     display: grid;
     grid-template-columns: 1.51fr 2fr 1.5fr;
     align-items: center;
     padding: 92px 51px 89px;
+    width: 100%;
+    margin: 0 auto;
   }
 
 .menu {
@@ -22,7 +18,7 @@
     white-space: nowrap;
   }
 
-.active_list {
+.active_list { /* хедер и футер */
     text-decoration: none;
   }
 
@@ -34,7 +30,7 @@
     list-style: none;
 }
 
-.text_list:hover {
+.text_list:hover { /* хедер и футер */
     background-color: #000000;
     color: #FFF;
 }
@@ -50,10 +46,48 @@
     width: 100%;
 }
 
- .adress {
+ .adress { /* хедер и футер */
     justify-self: end;
     font-style: inherit;
     font-size: 18px;
     line-height: 1.35;
     text-underline-position: under;
  }
+
+/* основной контент */
+ .main {
+    display: flex;
+    flex-direction: column;
+    gap: 183px;
+  }
+
+/* футер */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 50px 80px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.menu-footer {
+    text-align: center;
+    list-style: none;
+}
+
+.list-footer {
+    font-size: 18px;
+    line-height: normal;
+    text-underline-position: under;
+}
+
+.icons-footer {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+
+.social-icons-footer {
+    width: auto;
+    height: 48px;
+}
